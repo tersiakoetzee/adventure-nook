@@ -38,7 +38,7 @@ app.get('/', async function (req, res) {
 });
 app.post('/test', async function (req, res) {
   if(req.body.prov)
-console.log(req.body.prov);
+// console.log(req.body.prov);
 
   res.redirect('/wc')
 });
@@ -88,3 +88,4 @@ res.redirect('/thanks')
 app.listen(PORT, function(){
   console.log('App starting on port', PORT);
 });
+//https://git.heroku.com/adventurenook.git

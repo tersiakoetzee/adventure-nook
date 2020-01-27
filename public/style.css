@@ -1,5 +1,5 @@
 body{
-    background: url('/images/green.jpg');
+    background: url('/images/waterfall.jpg');
     background-repeat: no-repeat;
     background-size: cover;
 }
@@ -21,10 +21,13 @@ h1{
     color: black;
     text-align: center;
 }
+.pro{
+  font-style: italic;
+  font-size: xx-large;
+}
 .userrow{
   margin-top: 2em;
   margin-bottom: 2em;
-    /* text-align: center; */
     font-size: large;
 }
 .prov{
@@ -49,6 +52,7 @@ h1{
 input{
     border-radius: 0.5em;
     border-color:lightseagreen; 
+   
 }
 
 .dropbtn {
@@ -115,7 +119,6 @@ input{
 
   
   .row {
-    /* display: -ms-flexbox; */
     display: flex;
     -ms-flex-wrap: wrap; 
     flex-wrap: wrap;
@@ -144,9 +147,7 @@ input{
   }
   
   .container {
-    /* background-color: #f2f2f2; */
     padding: 5px 20px 15px 20px;
-    /* border: 1px solid lightgrey; */
     border-radius: 3px;
   }
   
@@ -180,10 +181,7 @@ input{
     cursor: pointer;
     font-size: 17px;
   }
-  
-  /* .btn:hover {
-    background-color: #45a049;
-  } */
+
   
   a {
     color: #2196F3;
@@ -208,12 +206,21 @@ input{
     }
   }
 
-  .col-12{
+  .thank{
     text-align: center;
     margin-top: 3em;
-    color:blue;
+    color:darkblue;
+    font-size: 2em;
+  }
+  .sent{
+    text-align: center;
+    margin-top: 3em;
+    color:darkblue;
     font-size: 2em;
   }
   .text{
+    text-align: center;
+    margin-top: 3em;
+    font-size: 2em;
     color: black;
   }

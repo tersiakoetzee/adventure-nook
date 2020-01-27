@@ -1,12 +1,11 @@
 
-<img src="/images/adventure.jpg" alt="Italian Trulli">
 <form action="/test" method="POST">
 
   <div class="navbar-header">
     <nav class="navbar navbar-inverse">
       <div class="home" id="myNavbar">
         <img src="/images/adventure.jpg" alt="Italian Trulli">
-        <h1> Nook</h1>
+        <h1 class="pro"> Nook</h1>
       </div>
       <ul class="nav navbar-nav navbar-right">
         <li><a href=""><span class="glyphicon glyphicon-user"></span> </a></li>
@@ -16,27 +15,28 @@
   </nav>
   
   <div class="userrow">
-    <span>
-      <h4>Name:</h4>
-    </span>
-    <span>
-      <input type="text" id="textTem" class="user" name="user" value=""pattern='[A-Za-z\\s]*'>
-    </span>
+  <div class="input-group">
+  <div class="input-group-prepend">
+    <span class="input-group-text" style="font-style: italic;"><b>Name</b></span>
+  </div>
+  <input type="text" aria-label="First name" class="form-control">
+ 
+</div>
   </div>
 
-  <h4>Select a province</h4>
+  <h4 class="pro">Select a province</h4>
   <div class="wc">
     
-  <button type="submit" name="prov" value="west" class=" btn-primary btn-lg "> Western Cape</button>
+  <button type="submit" name="prov" value="west" class=" btn-primary btn-lg " style="font-style: italic;"> Western Cape</button>
 </form>
 </div>
 <div class="mpu">
 <form action="/test1 " method="POST">
-  <button type="submit" name="prov" value="mpu" class=" btn-primary btn-lg ">Mpumalanga</button>
+  <button type="submit" name="prov" value="mpu" class=" btn-primary btn-lg " style="font-style: italic;">Mpumalanga</button>
 </form>
 </div>
 <div class="lim">
 <form action="/test2 " method="POST">
-  <button type="submit" name="prov" value="lim" class="btn-primary btn-lg ">Limpopo</button>
+  <button type="submit" name="prov" value="lim" class="btn-primary btn-lg " style="font-style: italic;">Limpopo</button>
 </form>
 </div>
