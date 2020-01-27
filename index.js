@@ -38,7 +38,7 @@ app.get('/', async function (req, res) {
 });
 app.post('/test', async function (req, res) {
   if(req.body.prov)
-// console.log(req.body.prov);
+console.log(req.body.prov);
 
   res.redirect('/wc')
 });
