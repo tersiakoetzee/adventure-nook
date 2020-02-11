@@ -1,72 +1,41 @@
 <form action="/sign" method="POST">
 
-
-<div class="navbar-header">
+  <div class="navbar-header">
     <nav class="navbar navbar-inverse">
       <div class="home" id="myNavbar">
-        <img src="../images\Adventure.jpg" >
+        <img src="../images\Adventure.jpg">
         <h1 class="pro"> Nook</h1>
       </div>
       <ul class="nav navbar-nav navbar-right">
-        <li><a href="/mp"><span class="glyphicon glyphicon-user"style="font-style: italic">Mpumalanga</a></span></li>
-        <li><a href="/wc"><span class="glyphicon glyphicon-log-in"style="font-style: italic">Western Cape</a></span></li>
-        <li><a href="/li"><span class="glyphicon glyphicon-user"style="font-style: italic">Limpopo </a></span></li>
-        <li><a href="/"><span class="glyphicon glyphicon-log-in"style="font-style: italic">Home</a></span></li>
+        <li><a href="/mp"><span class="glyphicon glyphicon-user" style="font-style: italic">Mpumalanga</a></span></li>
+        <li><a href="/wc"><span class="glyphicon glyphicon-log-in" style="font-style: italic">Western Cape</a></span>
+        </li>
+        <li><a href="/li"><span class="glyphicon glyphicon-user" style="font-style: italic">Limpopo </a></span></li>
+        <li><a href="/"><span class="glyphicon glyphicon-log-in" style="font-style: italic">Home</a></span></li>
       </ul>
   </div>
   </nav>
 
-   <div class="row">
-  <div class="col-75">
-    <div class="container">
-      <form action="/action_page.php">
-      
-        <div class="row">
-          <div class="col-50">
-            <h3 style="font-style: italic"> Address</h3>
-            <label for="fname"><i class="fa fa-user"></i><h5 style="font-style: italic"> Full Name</h5></label>
-            <input type="text" id="fname" name="firstname" placeholder="John M. Doe">
-            <label for="email"><i class="fa fa-envelope"></i><h5 style="font-style: italic"> Email</h5></label>
-            <input type="text" id="email" name="email" placeholder="john@example.com">
-            <label for="adr"><i class="fa fa-address-card-o"></i><h5 style="font-style: italic"> Address</h5></label>
-            <input type="text" id="adr" name="address" placeholder="542 W. 15th Street">
-            <label for="city"><i class="fa fa-institution"></i> <h5 style="font-style: italic">City</h5style="font-style: italic"></label>
-            <input type="text" id="city" name="city" placeholder="New York">
+  <div class="row">
+    <div class="col-75">
+      <div class="container">
+        <form action="/action_page.php">
 
-            <div class="row">
-              <div class="col-50">
-                <label for="state"><h5 style="font-style: italic">State</h5></label>
-                <input type="text" id="state" name="state" placeholder="NY">
-              </div>
-              <div class="col-50">
-                <label for="zip"><h5 style="font-style: italic">Zip</h5></label>
-                <input type="text" id="zip" name="zip" placeholder="10001">
+          <div class="row">
+            <div class="col-50">
+              <h3 style="font-style: italic">Booking Request</h3>
+              <label for="fname"><i class="fa fa-user"></i>
+                <h5 style="font-style: italic"> Full Name</h5>
+              </label>
+              <input type="text" id="fname" name="firstname" placeholder="John M. Doe">
+              <label for="email"><i class="fa fa-envelope"></i>
+                <h5 style="font-style: italic"> Email</h5>
+              </label>
+              
+              <input type="email" id="email" name="email" placeholder="john@example.com">
+       
               </div>
             </div>
-          </div>
 
-          <div class="col-50">
-            <h3 style="font-style: italic">Payment</h3>
-    
-            <label for="cname"style="font-style: italic">Name on Card</label>
-            <input type="text" id="cname" name="cardname" placeholder="John More Doe">
-            <label for="ccnum"style="font-style: italic">Credit card number</label>
-            <input type="text" id="ccnum" name="cardnumber" placeholder="1111-2222-3333-4444">
-            <label for="expmonth"style="font-style: italic">Exp Month</label>
-            <input type="text" id="expmonth" name="expmonth" placeholder="September">
-            <div class="row">
-              <div class="col-50">
-                <label for="expyear"style="font-style: italic">Exp Year</label>
-                <input type="text" id="expyear" name="expyear" placeholder="2018">
-              </div>
-              <div class="col-50">
-                <label for="cvv">CVV</label>
-                <input type="text" id="cvv" name="cvv" placeholder="352">
-                 <a href="/thanks" class="ag btn btn-primary"style="font-style: italic">Submit</a>
-              </div>
-            </div>
-          </div>
-
-          
-          
-</form>
+        <a href="/thanks" class="ag btn btn-primary" style="font-style: italic">Submit</a>
+        </form>
