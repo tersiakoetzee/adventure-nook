@@ -40,7 +40,7 @@ const handlebarSetup = exphbs({
 app.engine('handlebars', handlebarSetup);
 app.set('view engine', 'handlebars');
 
-
+//home
 app.get('/', async function (req, res) {
   res.render('index')
 });
@@ -60,16 +60,16 @@ app.get('/mp', async function (req, res) {
   res.render('mp')
 });
 
+app.get('/li', async function (req, res) {
+  res.render('li')
+});
+
 app.post('/test1', async function (req, res) {
   var visitmp = req.body.prov
   GetGuest.provinces(visitmp)
   console.log(visitmp, ":0");
 
   res.redirect('/mp')
-});
-
-app.get('/li', async function (req, res) {
-  res.render('li')
 });
 
 app.post('/test2', async function (req, res) {
@@ -79,8 +79,10 @@ app.post('/test2', async function (req, res) {
 
   res.redirect('/li')
 });
+//home
 
 
+//camping///
 app.get('/wcamping', async function (req, res) {
   res.render('wcamping')
 });
@@ -115,7 +117,10 @@ app.post('/licamping', async function (req, res) {
   res.redirect('/licamping')
   console.log(licamp, "})");
 });
+//camping//
 
+
+//selfcater//
 app.get('/wcselfc', async function (req, res) {
   res.render('wcselfc')
 });
@@ -125,7 +130,7 @@ app.post('/wcselfc', async function (req, res) {
   GetGuest.getAccommodation(wselfc)
   res.redirect('/wcselfc')
   console.log("ws");
-  
+
 });
 
 app.get('/mpselfc', async function (req, res) {
@@ -137,7 +142,7 @@ app.post('/mpselfc', async function (req, res) {
   GetGuest.getAccommodation(mself)
   res.redirect('/mpselfc')
   console.log("ms");
-  
+
 });
 
 app.get('/liselfc', async function (req, res) {
@@ -149,19 +154,19 @@ app.post('/liselfc', async function (req, res) {
   GetGuest.getAccommodation(lself)
   res.redirect('/liselfc')
   console.log("ls");
-  
-});
 
+});
+//selfcater//
+
+//bnb///
 app.get('/mpbnb', async function (req, res) {
   res.render('mpbnb')
 });
 
 app.post('/mpbnb', async function (req, res) {
-  var mbnb = req.body.acc 
+  var mbnb = req.body.acc
   GetGuest.getAccommodation(mbnb)
   res.redirect('/mpbnb')
-  
-  
 });
 
 app.get('/libnb', async function (req, res) {
@@ -173,7 +178,7 @@ app.post('/libnb', async function (req, res) {
   GetGuest.getAccommodation(lbnb)
   res.redirect('/libnb')
   console.log("lbnb");
-  
+
 });
 
 app.get('/wcbnb', async function (req, res) {
@@ -185,9 +190,9 @@ app.post('/wcbnb', async function (req, res) {
   GetGuest.getAccommodation(wbnb)
   res.redirect('/WCbnb')
   console.log("wbnb");
-  
-});
 
+});
+//bnb//
 
 
 
